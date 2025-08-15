@@ -1,3 +1,4 @@
+USE ShopDB;
 INSERT INTO Orders (CustomerID, Date) VALUES (1, '2025-01-01');
 SET @order_id = LAST_INSERT_ID();
 SET @current_amount = (SELECT WarehouseAmount FROM Products WHERE Name = 'AwersomeProduct');
